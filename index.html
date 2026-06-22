@@ -1,124 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>Portefólio de Sílvia</title>
-    <style>
-body {
-  margin: 0;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #f5f2ec;
-  color: #3f3a33;
-}
+  <meta charset="UTF-8">
+  <title>Portefólio de Sílvia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f5f2ec;
+      color: #3f3a33;
+    }
 
-#about {
-  padding: 80px 10%;
-  background-color: #f5f2ec;
-}
+    header {
+      text-align: center;
+      padding: 60px 0 20px;
+      background-color: #eae6dc;
+    }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
-.about-text {
-  flex: 1 1 380px;
-  max-width: 650px;
-  line-height: 1.6;
-  font-size: 0.98rem;
-}
+    header p {
+      font-size: 1.1rem;
+      color: #5a554d;
+    }
 
-.about-text h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
+    #about {
+      padding: 80px 10%;
+      background-color: #f5f2ec;
+    }
 
-.about-text p {
-  margin-bottom: 14px;
-}
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
 
-.about-text strong {
-  font-weight: 600;
-}
+    .about-text {
+      flex: 1 1 60%;
+      max-width: 650px;
+      line-height: 1.6;
+      font-size: 0.98rem;
+    }
 
-.about-image {
-  flex: 0 1 320px;
-  display: flex;
-  justify-content: center;
-}
+    .about-text h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
 
-.about-image img {
-  max-width: 280px;
-  width: 100%;
-  border-radius: 24px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  object-fit: cover;
-}
+    .about-text p {
+      margin-bottom: 14px;
+    }
 
-/* Responsivo para telemóvel */
-@media (max-width: 768px) {
-  #about {
-    padding: 60px 6%;
-  }
+    .about-text strong {
+      font-weight: 600;
+    }
 
-  .about-container {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-  }
+    .about-image {
+      flex: 0 1 30%;
+      display: flex;
+      justify-content: flex-end;
+    }
 
-  .about-image {
-    justify-content: flex-start;
-  }
+    .about-image img {
+      max-width: 220px;
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      object-fit: cover;
+    }
 
-  .about-image img {
-    max-width: 220px;
-  }
-}
-    </style>
-  <link rel="stylesheet" href="style.css">
+    .section {
+      padding: 60px 10%;
+    }
+
+    .section h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #3f3a33;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section li {
+      margin-bottom: 10px;
+    }
+
+    .section a {
+      color: #3f3a33;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .section a:hover {
+      color: #a67c52;
+    }
+
+    @media (max-width: 768px) {
+      #about {
+        padding: 60px 6%;
+      }
+
+      .about-container {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
+      .about-image {
+        justify-content: flex-start;
+      }
+
+      .about-image img {
+        max-width: 180px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <header>
     <h1>Olá, eu sou a Sílvia 👋</h1>
     <p>Bem-vindo ao meu portefólio!</p>
+  </header>
 
-<section id="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        After 14 years working in accounting, I witnessed first-hand how the field is rapidly transforming with automation and AI. Tasks such as document processing, reconciliations and validations are increasingly automated — and I believe this shift is not a threat, but an opportunity.
-      </p>
-      <p>
-        My goal is to help make this transition viable, reliable and error‑free. With deep knowledge of accounting processes, I understand where mistakes happen, what needs to be validated, and how workflows can be optimized. Now, I’m applying this experience to build automated solutions that free time, reduce operational risk, and allow professionals to focus on what truly matters: supporting clients with strategic, healthy decisions for their business.
-      </p>
-      <p>
-        To prepare for this new path, I completed the <strong>AiDAPT Data Analysis certification</strong> at CEGID Academy, where I developed technical skills in Python, SQL, Power BI, Tableau and data‑driven problem solving. My projects focused on identifying the causes of employee attrition, understanding retention drivers, and designing insights that help companies reduce turnover and protect their investment in people.
-      </p>
-      <p>
-        Today, I’m transitioning into the tech field with a clear mission: <strong>to create automation and data solutions that increase efficiency, improve decision‑making, and generate meaningful impact.</strong>
-      </p>
+  <section id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>After 14 years working in accounting, I witnessed first-hand how the field is rapidly transforming with automation and AI. Tasks such as document processing, reconciliations and validations are increasingly automated — and I believe this shift is not a threat, but an opportunity.</p>
+        <p>My goal is to help make this transition viable, reliable and error‑free. With deep knowledge of accounting processes, I understand where mistakes happen, what needs to be validated, and how workflows can be optimized. Now, I’m applying this experience to build automated solutions that free time, reduce operational risk, and allow professionals to focus on what truly matters: supporting clients with strategic, healthy decisions for their business.</p>
+        <p>To prepare for this new path, I completed the <strong>AiDAPT Data Analysis certification</strong> at CEGID Academy, where I developed technical skills in Python, SQL, Power BI, Tableau and data‑driven problem solving. My projects focused on identifying the causes of employee attrition, understanding retention drivers, and designing insights that help companies reduce turnover and protect their investment in people.</p>
+        <p>Today, I’m transitioning into the tech field with a clear mission: <strong>to create automation and data solutions that increase efficiency, improve decision‑making, and generate meaningful impact.</strong></p>
+      </div>
+      <div class="about-image">
+        <img src="image.jpg" alt="Sílvia – Data & Automation">
+      </div>
     </div>
-    <div class="about-image">
-      <img src="image.jpg" alt="Sílvia – Data & Automation">
-    </div>
+  </section>
+
+  <div class="section">
+    <h2>Projetos</h2>
+    <ul>
+      <li><a href="#">Projeto 1</a></li>
+      <li><a href="#">Projeto 2</a></li>
+    </ul>
   </div>
-</section>
-    <div class="section">
-        <h2>Projetos</h2>
-        <ul>
-            <li><a href="#">Projeto 1</a></li>
-            <li><a href="#">Projeto 2</a></li>
-        </ul>
-    </div>
 
-    <div class="section">
-        <h2>Contactos</h2>
-        <p>Email: o_teu_email</p>
-    </div>
+  <div class="section">
+    <h2>Contactos</h2>
+    <p>Email: o_teu_email</p>
+  </div>
 </body>
 </html>
+
